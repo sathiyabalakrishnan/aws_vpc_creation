@@ -1,5 +1,5 @@
 resource "aws_vpc" "mytestvpc" {
-  cidr_block = "10.0.0.0/16"
+  cidr_block = var.vpc_cidr_ip
   instance_tenancy = "default"
    tags = {
     Name = "myTestVPC"
